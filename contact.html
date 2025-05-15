@@ -63,42 +63,45 @@
             </div>
 
             <header class="site-navbar site-navbar-target" role="banner">
+
                 <div class="container">
-                    <div class="row align-items-center position-relative">
-                        <div class="col-lg-4">
-                            <nav class="site-navigation text-right ml-auto" role="navigation">
-                                <ul
-                                    class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block"
-                                >
-                                <li class="active "><a href="index.html" class="nav-link">Home</a></li>
-                                <li><a href="rooms.html" class="nav-link">Amenities</a></li>
-                                <li><a href="services.html" class="nav-link">About</a></li>
-                              </ul>
-                            </nav>
-                          </div>
-                          <div class="col-lg-4 text-center">
-                            <div class="site-logo">
-                              <img src="images/logo-tr.png" alt="best Homestay" title="best Homestay" style="width: 40px ; height: 40px;">
-                            </div>
-                
-                
-                            <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
-                                class="site-menu-toggle py-5 js-menu-toggle text-white"><span
-                                  class="icon-menu h3 text-white"></span></a></div>
-                          </div>
-                          <div class="col-lg-4">
-                            <nav class="site-navigation text-left mr-auto " role="navigation">
-                              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><a href="about.html" class="nav-link ">Rooms</a></li>
-                                <li><a href="gallery.html" class="nav-link">Locations</a></li>
-                                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                               
-                                </ul>
-                            </nav>
-                        </div>
+                  <div class="row align-items-center position-relative">
+          
+                    <div class="col-lg-4">
+                      <nav class="site-navigation text-right ml-auto " role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                          <li class="active "><a href="index.html" class="nav-link">Home</a></li>
+                          <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                          <li><a href="about.html" class="nav-link">About</a></li>
+                        </ul>
+                      </nav>
                     </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="site-logo">
+                        <img src="images/logo-tr.png" alt="best Homestay" title="best Homestay" style="width: 40px ; height: 40px;">
+                      </div>
+          
+          
+                      <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
+                          class="site-menu-toggle py-5 js-menu-toggle text-white"><span
+                            class="icon-menu h3 text-white"></span></a></div>
+                    </div>
+                    <div class="col-lg-4">
+                      <nav class="site-navigation text-left mr-auto " role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                          <li><a href="rooms.html" class="nav-link ">Rooms</a></li>
+                          <li><a href="locations.html" class="nav-link"> Nearby Locations</a></li>
+                          <li><a href="contact.html" class="nav-link">Contact</a></li>
+                         
+                        </ul>
+                      </nav>
+                    </div>
+          
+          
+                  </div>
                 </div>
-            </header>
+          
+              </header>
 
             <div class="ftco-blocks-cover-1">
                 <div class="ftco-cover-1" style="background-image: url('images/A2.jpeg')">
@@ -286,12 +289,11 @@
                                     <h2 class="footer-heading mb-4">Features</h2>
                                     <ul class="list-unstyled">
                                         <li><a href="./index.html">Home</a></li>
-                                        <li><a href="./rooms.html">Rooms</a></li>
-                                        <li><a href="./services.html">Service</a></li>
+                                        <li><a href="./amenities.html">Amenities</a></li>
                                         <li><a href="./about.html">About</a></li>
-                                        <li><a href="./gallery.html">Gallery</a></li>
+                                        <li><a href="./rooms.html">Rooms</a></li>
+                                        <li><a href="./locations.html">Nearby Locations</a></li>
                                         <li><a href="./contact.html">Contact</a></li>
-                                        <li><a href="./booking.html">Booking</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -367,7 +369,7 @@
                                 btn.style.display = 'none';
 
                                 $.ajax({
-                                    url: 'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
+                                    url: 'https://script.google.com/macros/s/AKfycbx3DrQPNISwtpyGPCFPP-58yYui1ivTETGrUYrWqO8kIrvAbYxvGsdcc5hoDySk_d1S/exec',
                                     data: $('#contactform1').serialize(),
                                     method: 'post',
                                     success: function (response) {
@@ -450,7 +452,7 @@
                     btn.style.display = 'none';
 
                     $.ajax({
-                        url: 'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
+                        url: 'https://script.google.com/macros/s/AKfycby6Atd6URx4ISuXxKfHkLAJCK4ONPaaWC5J0XyviUeT7w9hW6ppet0LoHxiiW-k3OMP/exec',
                         data: $('#contactform').serialize(),
                         method: 'post',
                         success: function (response) {
