@@ -10,33 +10,12 @@
   <meta property="og:description" content="Experience serene living at Aham Homestay — a cozy, nature-inspired retreat offering warm hospitality, comfort, and authentic local charm.">
   <meta property="og:site_name" content="Aham">
   <meta property="og:locale" content="en_US">
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F0SM4ERW0"></script> -->
-<!-- <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6F0SM4ERW0');
-</script> -->
-
-
-<!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MC89SK29');</script> -->
-  <!-- End Google Tag Manager -->
 
   <link rel="canonical" href="https://myaham.com/">
 
   <title>Aham |Experience serene living at Aham Homestay — a cozy, nature-inspired retreat offering warm hospitality, comfort, and authentic local charm.</title>
   <meta name="description"
     content="Experience serene living at Aham Homestay — a cozy, nature-inspired retreat offering warm hospitality, comfort, and authentic local charm." />
-
-
-
 
   <link rel="icon" href="images/logo-tr.png" type="image/png">
   <meta charset="utf-8">
@@ -78,16 +57,89 @@
       color: #128C7E;
       /* Darker color on hover */
     }
+
+    /* FLOATING ACTION BUTTONS - added */
+    .fab-container {
+      position: fixed;
+      right: 20px;
+      bottom: 22px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .fab {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      text-decoration: none;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .fab:active {
+      transform: translateY(1px);
+    }
+
+    /* WhatsApp FAB: green */
+    .fab-whatsapp {
+      background: linear-gradient(180deg, #27DA78 0%, #16A34A 100%);
+      color: #fff;
+    }
+
+    /* Call FAB: amber/orange to contrast with theme but not change theme colors */
+    .fab-call {
+      background: linear-gradient(180deg, #FFB547 0%, #FF9A00 100%);
+      color: #fff;
+    }
+
+    /* small label (optional) */
+    .fab-label {
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin-right: 10px;
+      white-space: nowrap;
+      transform: translateX(6px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.12s ease, transform 0.12s ease;
+    }
+
+    .fab-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .fab:hover + .fab-label,
+    .fab:focus + .fab-label {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Responsive: slightly smaller on very small screens */
+    @media (max-width: 420px) {
+      .fab {
+        width: 48px;
+        height: 48px;
+      }
+
+      .fab-label {
+        font-size: 12px;
+      }
+    }
   </style>
 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC89SK29"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <div class="site-wrap" id="home-section">
 
@@ -99,8 +151,6 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-
-
 
     <header class="site-navbar site-navbar-target" role="banner">
 
@@ -121,7 +171,6 @@
               <img src="images/logo-tr.png" alt="best Homestay" title="best Homestay" style="width: 40px ; height: 40px;">
             </div>
 
-
             <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
                 class="site-menu-toggle py-5 js-menu-toggle text-white"><span
                   class="icon-menu h3 text-white"></span></a></div>
@@ -132,17 +181,15 @@
                 <li><a href="rooms.html" class="nav-link ">Rooms</a></li>
                 <li><a href="locations.html" class="nav-link"> Nearby Locations</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-               
+
               </ul>
             </nav>
           </div>
-
 
         </div>
       </div>
 
     </header>
-
 
 
 
@@ -166,7 +213,7 @@
         </div>
       </div>
       <div class="ftco-blocks-cover-1">
-        <div class="ftco-cover-1" style="background-image: url('images/A1.jpeg');">
+        <div class="ftco-cover-1" style="background-image: url('images/image1 (1).jpeg');">
           <div class="container">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6">
@@ -185,7 +232,7 @@
         </div>
       </div>
       <div class="ftco-blocks-cover-1">
-        <div class="ftco-cover-1" style="background-image: url('images/imp/A4.jpeg');">
+        <div class="ftco-cover-1" style="background-image: url('images/home1.jpeg');">
           <div class="container">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6">
@@ -207,21 +254,14 @@
       </div>
     </div>
 
-
-
+    <!-- ABOUT (shortened to ~75 words) -->
     <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
-            <h2 class="heading-39291">Aham: A Timeless Sanctuary Where Silence, Stories, and Spice Dwell.</h2>
-            <p class="mb-5">
-              AHAM which means I in Sanskrit, is unique among mushrooming resorts who threaten to take the sanity of a tired traveller who wishes to forgo the chaos of the city. Instead in these modern resorts he finds more and more of the city.</p>
-            <p class="mb-5">
-              Tucked away at the end of a winding road, alive with the songs of bulbuls and peacocks, lies a valley cradled by silent hills. Here rests AHAM—an age-old cottage, untouched by time. Its wooden beams and stone walls gently murmur tales of love, simplicity, and forgotten times.
-
-              The aroma of ancestral recipes drifts through the air, while the soft glow of flickering lamps warms handwoven tapestries that honour the spirit of village life. Guests bow their heads at the entrance, as the century-old architect once intended—a quiet gesture of respect.
-              
-              AHAM offers family cottages, double and single rooms, and dormitories. One visit, one taste of our heritage cuisine, and your heart may never wish to leave. <p><a href="./about.html" class="more-39291">More About Us</a></p>
+          <div class="col-md-7">
+            <h2 class="heading-39291">Aham: A Timeless Sanctuary</h2>
+            <p class="mb-4">Aham is an 80-year-old heritage homestay crafted from traditional mud and timber techniques. Nestled in a quiet valley, it offers simple comforts, heritage meals, and immersive village rhythms — a restorative escape where stories, flavours and nature meet. Welcome to slow living and heartfelt hospitality.</p>
+            <p><a href="./about.html" class="more-39291">More About Us</a></p>
           </div>
 
           <div class="col-md-4 ml-auto">
@@ -235,130 +275,211 @@
       </div>
     </div>
 
+    <!-- OUR ROOMS (show 2 rooms only, rest on rooms page) -->
     <div class="site-section">
       <div class="container">
-        <div class="row  mb-5">
-          <div class="col-md-7">
-            <h2 class="heading-39291">Amenities Rooted in <br>  Comfort and Culture</h2>
-            <p>At AHAM, every amenity is thoughtfully curated to ensure your stay is both peaceful and enriching. Whether you're seeking soulful flavours, cozy evenings, or seamless connectivity—AHAM has it all.</p>
-            <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <h2 class="heading-39291">Our Rooms</h2>
+            <p>Comfortable family cottages, cosy doubles and simple singles inspired by local craft. Below are two featured room types — view all on the rooms page.</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <p><a href="./rooms.html" class="more-39291">Know more about rooms</a></p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-
+          <!-- Room 1 -->
+          <div class="col-md-6" data-aos="fade-up">
             <div class="media-92812">
-              <img src="images/keralaautheticbreakfast.jpg" alt="best Homestay" title="best Homestay" class="img-fluid">
+              <img src="images/A6.jpeg" alt="Family Cottage" title="Family Cottage" class="img-fluid">
               <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">Authentic Kerala Breakfast</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
+                <h3><a href="./rooms.html#family">Family Cottage</a></h3>
+                <p class="my-3">Spacious cottage with traditional timber interiors, private verandah and family dining. Sleeps 4–6 with heritage comfort.</p>
+                <p class="my-2"><a href="./rooms.html" class="more-39291">Know more</a></p>
               </div>
             </div>
-
           </div>
 
-          <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
+          <!-- Room 2 -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="media-92812">
-              <img src="images/reading.jpg" alt="best Homestay" title="best Homestay" class="img-fluid">
+              <img src="images/A7.jpeg" alt="Double Room" title="Double Room" class="img-fluid">
               <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">Reading Library</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
+                <h3><a href="./rooms.html#double">Double Room</a></h3>
+                <p class="my-3">Cozy double room with handcrafted furnishings, comfortable bedding and garden views — ideal for couples.</p>
+                <p class="my-2"><a href="./rooms.html" class="more-39291">Know more</a></p>
               </div>
             </div>
-
           </div>
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-
-            <div class="media-92812">
-              <img src="images/campfire.jpg" alt="best Homestay" title="best Homestay" class="img-fluid">
-              <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">Campfire Evenings</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media-92812">
-              <img src="images/taxi.jpg_large" alt="best Homestay" title="best Homestay" class="img-fluid">
-              <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">24/7 Taxi Service</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media-92812">
-              <img src="images/internet.webp" alt="best Homestay" title="best Homestay" class="img-fluid">
-              <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">Internet Services</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media-92812">
-              <img src="images/hotshower.webp" alt="best Homestay" title="best Homestay" class="img-fluid">
-              <div class="text">
-                <span class="caption"></span>
-                <h3><a href="#">Hot Water Shower</a></h3>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">Learn More</a></p>
-              </div>
-            </div>
-
-          </div>
-          
 
         </div>
       </div>
     </div>
 
+    <!-- EVENTS & CELEBRATIONS -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <h2 class="heading-39291">Events & Celebrations</h2>
+            <p>Celebrate life’s moments in a warm, intimate setting. We host small gatherings with local flavours and personalised service.</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <p><a href="./contact.html" class="more-39291">Enquire for Events</a></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="media-92812">
+              <img src="images/birthday.jpg" alt="Birthdays & Family Events" title="Birthdays" class="img-fluid">
+              <div class="text">
+                <h3>Birthdays & Family Events</h3>
+                <p class="my-2">Intimate family celebrations with customised menus, cosy seating and a warm homely vibe.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="media-92812">
+              <img src="images/Post_Indian_wedding_rituals.webp" alt="Marriage eves" title="Marriage eves" class="img-fluid">
+              <div class="text">
+                <h3>Marriage Eves</h3>
+                <p class="my-2">Small pre-wedding gatherings and intimate ceremonies rooted in local traditions and flavours.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="media-92812">
+              <img src="images/duy-pham-Cecb0_8Hx-o-unsplash-scaled.jpg" alt="Office and Team Outings" title="Office Outings" class="img-fluid">
+              <div class="text">
+                <h3>Office & Team Outings</h3>
+                <p class="my-2">Team retreats with simple meeting spaces, group meals and nature walks to refresh the team.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- AMENITIES (show only 3) -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <h2 class="heading-39291">Our Amenities</h2>
+            <p>Thoughtfully curated comforts to make your stay restful and memorable.</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <p><a href="./amenities.html" class="more-39291">View All Amenities</a></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="media-92812">
+              <img src="images/keralaautheticbreakfast.jpg" alt="Authentic Kerala Breakfast" class="img-fluid">
+              <div class="text">
+                <h3>Authentic Kerala Breakfast</h3>
+                <p class="my-2">Fresh, home-style breakfast prepared with local ingredients.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="media-92812">
+              <img src="images/campfire.jpg" alt="Campfire Evenings" class="img-fluid">
+              <div class="text">
+                <h3>Campfire Evenings</h3>
+                <p class="my-2">Warm campfire gatherings with stories, music and shared meals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="media-92812">
+              <img src="images/image1 (23).jpeg" alt="Reading Library" class="img-fluid">
+              <div class="text">
+                <h3>Reading Library</h3>
+                <p class="my-2">A quiet corner with books on local culture, history and nature.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- UNIQUENESS IN ACTIVITIES -->
     <div class="site-section">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-7">
-            <h2 class="heading-39291">Beyond Stay:<br> Experiences That Speak to You</h2>
+            <h2 class="heading-39291">Uniqueness in Activities</h2>
+            <p>We curate simple, authentic experiences—plantation visits, local craft interactions and guided nature walks—tailored to your interests and the season.</p>
           </div>
           <div class="col-md-5 text-right">
-            <p><a href="./amenities.html" class="more-39291">View All Activities</a></p>
+            <p><a href="./amenities.html" class="more-39291">View This Activity</a></p>
+          </div>
+        </div>
+
+        <div class="media-29191">
+          <div class="owl-2 owl-carousel">
+            <img src="images/activity1.jpg" alt="activity" class="img-fluid">
+            <img src="images/activity2.avif" alt="activity" class="img-fluid">
+            <img src="images/activity3.jpg" alt="activity" class="img-fluid">
           </div>
         </div>
       </div>
-      <div class="media-29191">
-        <div class="owl-2 owl-carousel">
-          <img src="images/activity1.jpg" alt="best Homestay" title="best Homestay" class="img-fluid">
-          <img src="images/activity2.avif" alt="best Homestay" title="best Homestay
-          " class="img-fluid">
-          <img src="images/activity3.jpg" alt="best Homestay" title="best Homestay" class="img-fluid">
-          <img src="images/activity4.jpg" alt="best Homestay" title="interior homestay" class="img-fluid">
-          <img src="images/activity5.jpg" alt="best Homestay in india" title="best Homestay" class="img-fluid">
-          <img src="images/activity6.avif" alt="best Homestay" title="best Homestay" class="img-fluid">
+    </div>
+
+    <!-- NEARBY LOCAL ATTRACTIONS (show 3) -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <h2 class="heading-39291">Nearby Local Attractions</h2>
+            <p>Explore the region with these nearby highlights — more places available on the locations page.</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <p><a href="./locations.html" class="more-39291">View All Locations</a></p>
+          </div>
         </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="media-92812">
+              <img src="images/banasura.jpg" alt="Location 1" class="img-fluid">
               <div class="text">
-                <span class="caption mb-1 d-block"></span>
-                <h3 class="mb-3"><a href="#">Uniqueness in Activities </a></h3>
-                <p>We focus on you, your likes and preferences. We try to accommodate and entertain you in the best possible ways and will put a great deal of effort in arranging activities that are of your interest- exploring nature, plantation visits, farm visits, site seeing or local folk arts or festivals during your visit if any. </p>
-                <p class="my-5"><a href="./amenities.html" class="more-39291">View This Activity</a></p>
+                <h3>Scenic Viewpoint</h3>
+                <p class="my-2">A short drive to breathtaking valley views and sunrise points.</p>
               </div>
             </div>
           </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="media-92812">
+              <img src="images/activity1.jpg" alt="Location 2" class="img-fluid">
+              <div class="text">
+                <h3>Local Spice Plantation</h3>
+                <p class="my-2">Guided walks to learn about native spices and farming life.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="media-92812">
+              <img src="images/activity4.jpg" alt="Location 3" class="img-fluid">
+              <div class="text">
+                <h3>Village Market</h3>
+                <p class="my-2">Experience local produce, handicrafts and warm trade stories.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -393,7 +514,7 @@
                   <li><a href="./rooms.html">Rooms</a></li>
                   <li><a href="./locations.html">Nearby Locations</a></li>
                   <li><a href="./contact.html">Contact</a></li>
-                 
+
                 </ul>
               </div>
 
@@ -466,18 +587,13 @@
           })
         </script>
 
-
-
-
         <div class="row pt-0 mt-0 text-center">
           <div class="col-md-12">
             <div class="border-top pt-0">
               <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script> All rights reserved | This website is
                 designed and developed by <a href="https://auxxweb.in" target="_blank">Auxxweb Solutions</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
           </div>
@@ -487,6 +603,27 @@
     </footer>
 
   </div>
+
+  <!-- FLOATING ACTION BUTTONS -->
+  <div class="fab-container" aria-hidden="false">
+    <!-- WhatsApp -->
+    <div class="fab-group">
+      <a class="fab fab-whatsapp" href="https://wa.me/919495962998" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp +91 94959 62998">
+        <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i>
+      </a>
+      <!-- optional label (visible on hover) -->
+      <div class="fab-label">WhatsApp Us</div>
+    </div>
+
+    <!-- Call -->
+    <div class="fab-group" >
+      <a class="fab fab-call"  href="tel:+919495962998" aria-label="Call +91 94959 62998">
+        <i class="fas fa-phone fa-lg" aria-hidden="true"></i>
+      </a>
+      <div class="fab-label">Call Now</div>
+    </div>
+  </div>
+  <!-- /FLOATING ACTION BUTTONS -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
